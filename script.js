@@ -1,7 +1,4 @@
 
-<<<<<<< Updated upstream
-        function openCity(evt, cityName) {
-=======
 
   
    
@@ -9,7 +6,6 @@
 
  
         function tabbb(evt, tabbo) {
->>>>>>> Stashed changes
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -22,6 +18,8 @@
             document.getElementById(tabbo).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+
 
 function toggleMenu() {
 var x = document.getElementById("myNavbar");
