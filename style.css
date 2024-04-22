@@ -849,6 +849,7 @@ h6,
   gap: 0px;
   justify-content: center;
   display: flex;
+  cursor: default;
 
 }
 
