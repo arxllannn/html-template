@@ -1,10 +1,4 @@
 
-
-  
-   
-  
-
- 
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -18,8 +12,6 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-
-
 
 function toggleMenu() {
 var x = document.getElementById("myNavbar");
