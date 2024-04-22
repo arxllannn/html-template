@@ -40,13 +40,11 @@ body {
 }
 @media (max-width: 800px) {
   .gridp {
-    display: grid;
     grid-template-columns: auto;
   }
 }
 @media (max-width: 320px) {
   .gridp {
-    display: grid;
     grid-template-columns: auto;
   }
 }
@@ -62,7 +60,7 @@ body {
 }
 @media (max-width: 800px) {
   .z1 {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 @media (max-width: 800px) {
@@ -78,7 +76,7 @@ body {
   width: 40px;
   margin-top: 210px;
   display: flex;
-  margin-left: 0px;
+  margin-left: 0;
   height: 2px;
   background-color: #4B5563;
 }
@@ -86,14 +84,14 @@ body {
   background-color: #f7f7f7;
   margin-top: -1px;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
   width: 100%;
 }
 .text3 {
   font-size: calc(0.599rem + 1.2vw);
   font-weight: 300;
-  line-height: 1.2;}
+  line-height: 1.2;
+}
 @media (max-width: 1200px) {
   .text3 {
     font-size: 1.2rem;
@@ -126,7 +124,7 @@ body {
     font-size: 0.6rem !important;
   }
 }
-.text8 {
+.text8, .text12 {
   font-size: calc(0.599rem + 8vw);
   font-weight: 300px;
   line-height: 1.2;
@@ -136,41 +134,30 @@ body {
     font-size: 4rem;
     margin-top: -26px;
   }
-}
-@media (max-width: 500px) {
-  .text8 {
-    font-size: 2.9rem;
-    padding-top: 12px;
-  }
-}
-.text12 {
-  font-size: calc(0.599rem + 8vw);
-  font-weight: 300px;
-  line-height: 1.2;
-}
-@media (max-width: 1200px) {
   .text12 {
     font-size: 4rem;
   }
 }
 @media (max-width: 500px) {
-  .text12 {
+  .text8, .text12 {
     font-size: 2.9rem;
+  }
+  .text8 {
+    padding-top: 12px;
+  }
+  .text12 {
     padding-bottom: 30px;
     padding-top: 10px;
   }
 }
-.justify-content-center {
+.justify-content-center, .d-flex, .align-items-center {
   justify-content: center !important;
-}
-.d-flex {
   display: flex !important;
-}
-.align-items-center {
   align-items: center !important;
 }
-.mt-5 {
+.mt-5, .mb-5 {
   margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
 .rotate {
   margin-left: 80px;
@@ -203,9 +190,6 @@ body {
     height: 1px;
   }
 }
-.mb-5 {
-  margin-bottom: 3rem !important;
-}
 .footline {
   display: flex;
   justify-content: center;
@@ -221,52 +205,34 @@ body {
     gap: 5px;
   }
 }
+.btn1, .btn2 {
+  padding: 10px;
+  border-radius: 30px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 8px;
+  cursor: pointer;
+}
 .btn1 {
   background-color: #565656;
   color: #f7f7f7;
-  padding: 10px;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15px;
-  margin-top: 8px;
-  -ms-flex-direction: row;
 }
 .btn1:hover {
   background-color: #000;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  .btn1 {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-    height: 0px;
-    margin-top: 4px;
-  }
 }
 .btn2 {
-  padding: 10px;
   border: 1px solid;
   border-color: #565656;
-  border-radius: 30px;
-  height: 15px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 8px;
-  cursor: pointer;
 }
 .btn2:hover {
   background-color: rgb(255, 49, 49);
   color: #ffffff;
   border-color: #f73f3f;
-  cursor: pointer;
 }
 @media (max-width: 500px) {
-  .btn2 {
+  .btn1, .btn2 {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -302,6 +268,12 @@ body {
 }
 .tab {
   overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  gap: 0;
+  justify-content: center;
+  display: flex;
+  cursor: default;
 }
 .tab button {
   float: left;
@@ -317,18 +289,9 @@ body {
 }
 .tab button:hover {
   border-bottom: 2px solid rgb(231, 12, 231);
-  cursor: pointer;
 }
 .tab button.active {
   border-bottom: 2px solid rgb(227, 28, 245);
-}
-.tab {
-  border-bottom: 1px solid #ccc;
-  margin: 0px;
-  gap: 0px;
-  justify-content: center;
-  display: flex;
-  cursor: default;
 }
 .tabcontent {
   display: none;
@@ -341,30 +304,19 @@ body {
     margin-top: -10px;
   }
 }
-h5,
-.h5 {
+h5, .h5 {
   font-size: 1.25rem;
 }
 @media screen and (max-width: 900px) {
-  .margintt {
-    margin-left: 0px;
-    justify-content: center;
-    display: flex;
-  }
-}
-.marginaa {
-  margin-left: 22%;
-}
-@media screen and (max-width: 900px) {
-  .marginaa {
-    margin-left: 0px;
+  .margintt, .marginaa {
+    margin-left: 0;
     justify-content: center;
     display: flex;
   }
 }
 @media screen and (max-width: 1232px) {
-  .marginaa {
-    margin-left: 0px;
+  .margintt, .marginaa {
+    margin-left: 0;
     justify-content: center;
     display: flex;
   }
@@ -424,8 +376,8 @@ h5,
     color: #000;
     border-radius: 25px;
     font-size: 15px;
-    margin-left: 0px !important;
-    margin-right: 0px;
+    margin-left: 0 !important;
+    margin-right: 0;
     margin-top: 4px;
   }
 }
