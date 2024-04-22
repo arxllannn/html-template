@@ -1,15 +1,3 @@
-body {
-  background-image: url('../images/elipsis1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0%;
-  background-attachment: contain;
-}
-@media (max-width: 1400px) {
-  body {
-    background-image: url('../images/elipsis3.png');
-  }
-}
 .topm {
   margin-top: -30px;
 }
@@ -66,7 +54,15 @@ body {
 @media (max-width: 800px) {
   .z2 {
     margin-top: -190px;
+    background-color: #e346f8;
+    filter: blur(100px);
+    justify-content: start;
   }
+}
+.filter{
+  background-color: #e346f8;
+  filter: blur(100px);
+  justify-content: start bottom;
 }
 .gridc {
   display: grid;
